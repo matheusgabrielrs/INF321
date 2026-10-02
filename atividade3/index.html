@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>INF321</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <font ></font>
+</head>
+
+<body>
+    <header>
+        <h1>Matheus's Papelaria</h1><br>
+        <p>Bem vindo à Papelaria do Matheus! Temos diversos produtos com os melhores preços!</p>
+    </header>
+    <main>
+        
+        <div id="container-pesquisa">
+         
+                <input type="text" name="barra" id="barra" placeholder="Digite um produto aqui">
+                <button id="buscar">Buscar</button>
+       
+        </div>
+        <h2 class="titulos">Produtos disponíveis</h2>
+         <div id="cart">
+            <span>Itens no carrinho: </span>
+            <span id="qtd_itens">0</span>
+        </div>
+        <section class="produtos"> 
+            <div class="card">
+                <p class="nome_produto"><strong>Caderno simples</strong></p>
+                <img src="https://cdnv2.moovin.com.br/marbig/imagens/produtos/det/caderno-espiral-capa-dura-universitario-1-materia-zip-preto-80-folhas-img-245117_0209260947336572.jpg"
+                    alt="Foto de caderno simples">
+                <p>R$ 30,00</p>
+                <button class="botao-compra">Comprar</button>
+                
+            </div>
+            <div class="card">
+                <p class="nome_produto"><strong>Caneta esferográfica</strong></p>
+                <img src="https://cdn.awsli.com.br/600x450/1358/1358824/produto/251685467/eses-0013-1-1-h2lnzzpudy.jpg"
+                    alt="Foto de caneta esferografica">
+                <p>R$ 3,00</p>
+               <button class="botao-compra">Comprar</button>
+               
+            </div>
+            <div class="card">
+                <p class="nome_produto"><strong>Cola branca</strong></p>
+                <img src="https://www.reynalpapeis.com.br/image/cache/data/eftr/Img_ftr_rp_3306904-580x580.JPG?version=20250722165745"
+                    alt="Foto de cola branca">
+                <p>R$ 4,00</p>
+                 <button class="botao-compra">Comprar</button>
+            </div>
+            <div class="card">
+                <p class="nome_produto"><strong>Tesoura sem ponta</strong></p>
+                <img src="https://img.kalunga.com.br/FotosdeProdutos/674734d.jpg" alt="Foto de tesoura sem ponta">
+                <p>R$ 5,00</p>
+                <button class="botao-compra">Comprar</button>
+            </div>
+        </section>
+        <div id="container-msg">
+            <p id="msg-compra"></p>
+        </div>
+       
+    </main>
+    <br>
+     <section id="fale_conosco">
+            <h2  class="titulos">Fale conosco</h2>
+            <form id="formulario">
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome">
+                <p class="oculto">Este campo é obrigatório.</p>
+                <label>E-mail:</label>
+                <input type="email" name="email" id="email">
+                <p class="oculto">Este campo é obrigatório.</p>
+                <label>Mensagem:</label>
+                <textarea name="msg" id="msg"></textarea>
+                <p  class="oculto">Este campo é obrigatório.</p>
+                <button id="botao-cadastro">Enviar</button>
+            </form>
+        </section>
+    <footer>
+        <p><strong>Papelaria do Matheus</strong></p>
+        <p> Criado por: Matheus</p>
+        <p>2026</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
